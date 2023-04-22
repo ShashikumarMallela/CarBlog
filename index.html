@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Blog-Login</title>
+     <link rel="stylesheet" href="./Css/login.css">
+    <script src="./Js/login.js"></script>
+</head>
+<body>
+    <div id="OuterCont">
+        <div id="innerCont">
+            <h1 id="heading">Login</h1>
+            <form>
+                <div class="inputdiv">
+                    <input class="inputtags" placeholder="Enter the Email">
+                </div>
+                <div class="inputdiv" id="passdiv">
+                    <input type="password" class="inputtags" placeholder="Enter the Password">
+                    <img id="passvis"src="./Assect/Images/closeeyes.jpg" onmousedown="passVis()" onmouseup="passHid()">
+                </div>
+                <p id="status"></p>
+                <input type="button" value="Login" id="loginButton" onclick="passvalid()" onmousedown="bigButton()" onmouseup="smallButton()">
+                <button><a href="./Html/signup.html">Creat an account</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
